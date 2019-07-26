@@ -21,7 +21,7 @@ public class App extends Application {
 		super.onCreate();
 		context = getApplicationContext();
 
-		//创建数据库
+		//    创建数据库
 		GreenDaoHelper.initDataBase(context, DateBaseName);
 		QueryBuilder.LOG_SQL = true;
 		QueryBuilder.LOG_VALUES = true;
