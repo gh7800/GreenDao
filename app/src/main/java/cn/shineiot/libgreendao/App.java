@@ -6,7 +6,7 @@ import android.content.Context;
 
 import org.greenrobot.greendao.query.QueryBuilder;
 
-import cn.shineiot.libgreendao.helper.GreenDaoHelper;
+import cn.shineiot.libgreendao.helper.DBHelper;
 
 /**
  * @author wangs
@@ -22,7 +22,7 @@ public class App extends Application {
 		context = getApplicationContext();
 
 		// 创建数据库
-		GreenDaoHelper.initDataBase(context, DateBaseName);
+		DBHelper.initDataBase(context, DateBaseName);
 		QueryBuilder.LOG_SQL = true;
 		QueryBuilder.LOG_VALUES = true;
 

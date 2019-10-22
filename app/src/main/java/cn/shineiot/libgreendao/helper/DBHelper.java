@@ -9,7 +9,7 @@ import cn.shineiot.libgreendao.entity.DaoSession;
 /**
  * @author wangs
  */
-public class GreenDaoHelper {
+public class DBHelper {
 
 	private static DaoMaster.DevOpenHelper devOpenHelper;
 	private static DaoMaster daoMaster;
@@ -31,5 +31,4 @@ public class GreenDaoHelper {
 		}
 		return daoMaster.newSession();
 	}
-
 }
