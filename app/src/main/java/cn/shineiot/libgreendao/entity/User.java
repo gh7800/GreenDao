@@ -24,12 +24,12 @@ public class User {
 	@NotNull
 	private String name;
 
-	//不会生成列
+	/**不会生成列*/
 	@Transient
 	private String age;
 
 	//唯一的
-	@Unique
+//	@Unique
 	private int index;
 
 	//@ToOne(joinProperty = "name")

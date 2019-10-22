@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 	public void onClick(View view) {
 		switch (view.getId()) {
 			case R.id.insert:
-				user = new User("张三-"+System.currentTimeMillis());
+				user = new User("张三");
 				userDao.insert(user);
 				break;
 			case R.id.insertall:
