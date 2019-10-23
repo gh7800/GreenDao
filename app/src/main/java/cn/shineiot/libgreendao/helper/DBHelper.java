@@ -15,7 +15,9 @@ public class DBHelper {
 	private static DaoMaster daoMaster;
 
 	public static void initDataBase(Context context, String name) {
-		devOpenHelper = new DaoMaster.DevOpenHelper(context, name, null);
+		if(null == devOpenHelper) {
+			devOpenHelper = new DaoMaster.DevOpenHelper(context, name, null);
+		}
 	}
 
 	public static DaoMaster getDaoMaster(){

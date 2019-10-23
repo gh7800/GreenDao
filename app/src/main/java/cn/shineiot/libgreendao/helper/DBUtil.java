@@ -109,12 +109,24 @@ public class DBUtil {
 
     /**
      * 更新数据
-     * @param cls
-     * @param property
-     * @param currentValue 查找的字段
-     * @param value 要修改的值
+     * @param cls 更新的对象
      */
     public void update(AbstractDao abstractDao, Object cls){
         abstractDao.update(cls);
     }
+
+    /**
+     * 删除一条数据
+     */
+    public void delete(AbstractDao abstractDao,Object obj){
+        abstractDao.delete(obj);
+    }
+
+    /**
+     * 删除一个表
+     */
+    public void deleteTable(AbstractDao abstractDao){
+        abstractDao.deleteAll();
+    }
+
 }

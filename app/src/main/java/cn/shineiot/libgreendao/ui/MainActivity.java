@@ -124,7 +124,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.deleteall:
-                userDao.deleteAll();
+//                userDao.deleteAll();
+                DBUtil.getInstance().deleteTable(userDao);
                 break;
             case R.id.update:
                 User user = (User) DBUtil.getInstance().query(userDao, UserDao.Properties.Name, "张三4");
